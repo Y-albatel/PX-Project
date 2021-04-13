@@ -9,19 +9,33 @@ body{
 .clearfix:after{clear:both;display:block}
 a{color:inherit;text-decoration:none}
 
+
+.title{
+	text-align: center;
+	margin-top:50px;
+	font-size: 24px;
+	color:rgba(40,57,101,.9);
+	display: block;
+}
+
 .login-wrap{
 	width:100%;
+	height: auto;
 	margin:auto;
+	margin-top: 50px;
+	padding: auto;
 	max-width:525px;
 	min-height:670px;
 	position:relative;
-	background:url(/Users/macbook/Documents/PXProject/PX_Project/images/background.jpg) no-repeat center;
+	overflow: auto;
+	background:url(/Users/yousaf/Documents/PX-Project/PX-Project/images/background.jpg) no-repeat center;
 	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 .login-html{
 	width:100%;
 	height:100%;
 	position:absolute;
+	overflow: auto;
 	padding:90px 70px 50px 70px;
 	background:rgba(40,57,101,.9);
 }
@@ -73,7 +87,7 @@ a{color:inherit;text-decoration:none}
 .login-form .group .button{
 	width:100%;
 	color:#fff;
-	display:block;
+	display:inline;
 }
 .login-form .group .input,
 .login-form .group .button{
@@ -147,4 +161,17 @@ a{color:inherit;text-decoration:none}
 }
 .foot-lnk{
 	text-align:center;
+	padding-bottom: 50px;
 }
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+  }
+
+  img.avatar {
+	width: 40%;
+	border-radius: 50%;
+	margin-left: 110px;
+  }
