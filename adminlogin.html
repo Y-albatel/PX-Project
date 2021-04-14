@@ -1,14 +1,14 @@
 <link rel="stylesheet" href="css/styles.css" />
 
 <div class="title">
-	<h1> USER </h1>
+	<h1> ADMIN </h1>
 </div>
 
 <div class="login-wrap">
 	<div class="login-html">
 		
 		<!-- Switching between Sign In and Sign Up page, By using Radio Button -->
-		
+
 		<input id="sign-in-radio" type="radio" name="tab" class="sign-in" checked>
 		<label for="sign-in-radio" class="tab">Sign In</label>
 		<input id="sign-up-radio" type="radio" name="tab" class="sign-up">
@@ -18,7 +18,7 @@
 			<div class="sign-in-htm">
 				<div class="group">
 					<div class="group">
-						<label for="user" class="label">Username</label><span style="color: red !important; display: inline; float: none;">  *</span> 
+						<label for="user" class="label">Admin Name</label><span style="color: red !important; display: inline; float: none;">  *</span> 
 						<input id="user" type="text" class="input">
 					</div>
 
@@ -32,14 +32,9 @@
 						<label for="check"><span class="icon"></span> Keep me Signed in</label>
 					</div>
 
-					<a href= "profile.html"><input type="submit" class="button" value="Sign In"></a>
-					
+					<a href="adminDashboard.html"> <input type="submit" class="button" value="Sign In">
+					</a>
 				</div>
-
-				<div class="group" style ="padding-left: 280px";>
-					<a href="adminlogin.html">Go for Admin</a>
-				</div>
-
 				<div class="hr"></div>
 				<div class="foot-lnk">
 					<a href="#forgot">Forgot Password?</a>
@@ -53,7 +48,7 @@
 					</div>
 		
 					<div class="group">
-						<label for="user" class="label">Username</label><span style="color: red !important; display: inline; float: none;">  *</span> 
+						<label for="user" class="label">Admin Name</label><span style="color: red !important; display: inline; float: none;">  *</span> 
 						<input id="user" type="text" class="input">
 					</div>
 
@@ -74,10 +69,10 @@
 
 					<div class="group">
 						<label for="phone" class="label">Phone</label><span style="color: red !important; display: inline; float: none;">  *</span> 
-						<input id="phone" type="text" class="input">
+						<input id="phone" type="text" class="input"><br>
 					</div>
 					<div class="group"> 
-						<label for="country" class="label">Country</label><span style="color: red !important; display: inline; float: none;">  *</span>      
+						<label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>      
 							<br>
 
 							<select id="country" name="country" class="input">
@@ -333,7 +328,7 @@
 				</div>
 				<div class="hr"></div>
 				<div class="foot-lnk">
-					<label for="sign-in-radio">Already Member?</a>
+					<label for="sign-in-radio">Already Admin?</a>
 				</div>
 			</div>
 		</div>
