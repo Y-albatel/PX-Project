@@ -1,71 +1,21 @@
-<!DOCTYPE html>
-<html>
-	<style>
-		@media screen and (min-width: 768px)
-		.main {
-			padding-top: 48px;
-			padding-bottom: 48px;
-		}
-		.main {
-		padding-top: 30px;
-		padding-bottom: 30px;
-		margin-bottom: 30px;
-		color: inherit;
-		background-color: #54bbff;
-		}
-		.main .h1,.main h1{color:inherit}.main 
-		p {
-			margin-bottom:15px;
-			font-size:16px;
-			font-weight:200
-		}
-		.main>hr{border-top-color:#d5d5d5}.container 
-		.main,.container-fluid 
-		.main {
-		padding-right:15px;
-		padding-left:15px;
-		border-radius:6px
-		}
-		.main .container{max-width:100%}
-		@media screen and (min-width:768px){
-		.main{padding-top:30px;
-		padding-bottom:135px
-		}
-		.container .main,.container-fluid .main{
-		padding-right:60px;
-		padding-left:60px
-		}
-		.main .h1,.main h1{font-size:63px}}
-		.row {
-		padding-bottom: 10px;
-		}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-		.sidebyside {
-		margin-right:auto;
-		margin-left:auto
-		}
-		@media (min-width:768px){.sidebyside{width:750px}}
-		@media (min-width:992px){.sidebyside{width:970px}}
-		@media (min-width:1200px){.sidebyside{width:1170px}}
-		.sidebyside-fluid{
-		padding-right:15px;
-		padding-left:15px;
-		margin-right:auto;
-		margin-left:auto
-		}
-		.profileDetailsCon {
-		padding-right:15px;
-		padding-left:15px;
-		margin-right:auto;
-		margin-left:auto
-		}
-		.profileCon {
-		padding-right:15px;
-		padding-left:15px;
-		margin-right:auto;
-		margin-left:auto
-		}
-
+    <title>Profile</title>
+    
+    <style>
+        .checked {
+          color: orange;
+          
+        }
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -85,7 +35,6 @@
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 80%;
 }
 
@@ -103,121 +52,139 @@
   text-decoration: none;
   cursor: pointer;
 }
-	</style>
-	<head>
-		<title>Profile Page</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	</head>
-	<body>
-
-		<div class="main">
-			<div class="col-sm-4">
-				<h2>Robert Dwayne</h2>
-			</div>
-			<div class="col-sm-4">
-				<p>Role: Ride Leader<p>
-				<p>Joined 2 years ago</p>
-				<p>DOB: 21/03/1990</p>
-			</div>
-			<div class="col-sm-4">
-				<button type="button" class="btn">Edit Details</button> 
-				<button type="button" class="btn">Logout</button> 
-			</div>			
-		</div>`
-
-		<div class="sidebyside">
-		<div class="profileDetailsCon">
-			<div class="row">
-				<div class="col-lg-4" style="border-style: groove;">
-				<h3><b>Personal details</b></h3>
-				<p>First Name: Robert</p>
-				<p>Last Name: Dwayne</p>
-				<p>DOB: 21/03/1990</p>
-				<p>City: Sydney</p>
-				<p>Suburb: Bondi</p>
-				<p>Phone Number: 0430 762 374</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="profileCon">
-			<div class="row">
-				<div class="col-sm-4" style="border-style: groove;">
-					<a href="events.html"><b><h3></h3>Next events</b></h3></a>
-					<table style="width:100%">
-						<tr>
-							<th>Event Name</th>
-							<th>Date</th>
-							<th>Ride Leader</th>
-						</tr>
-						<tr>
-							<td>Coastal Ride</td>
-							<td>03/04/2021</td>
-							<td>John Doe</td>
-						</tr>
-						<tr>
-							<td>Centennial Parklands</td>
-							<td>10/04/2021</td>
-							<td>Jason Lawd</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-sm-4" style="border-style: groove;">
-					<h3><a href="badges.html"><b>Top Badges</b></a></h3>
-					<button id="myBtn">Show Badges</button>
-
-					<div id="myModal" class="modal">
-
-						<div class="modal-content">
-							<span class="close">&times;</span>
-							<span class="w3-badge w3-xxxlarge w3-padding w3-red">Rode 5km</span>
-							<span class="w3-badge w3-xxxlarge w3-padding w3-green">Fixed tyre</span>
-							<span class="w3-badge w3-xxxlarge w3-padding w3-blue">Ride leader</span>
-						</div>
-
+    </style>
+  </head>
+  <body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Addventageous</h5>           
+		<nav class="my-2 my-md-0 mr-md-3">
+			<a class="btn btn-outline-primary" href="#">Robert Dwayne</a>
+            <a class="p-2 text-dark" href="#"><button type="button" class="btn btn-warning">Badges</span></button></a>
+            <a class="p-2 text-dark" href="#"><button type="button" class="btn btn-danger">Logout</button></a>
+        </nav>
+	</div>
+    <div class="container">
+        <!-- Content here -->
+        <div class="row" style="margin-top: 2%;">
+            <div class="col-6 ml-auto mr-auto">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Personal Details</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><p class="card-text"><strong>First Name:</strong> Robert</p></li>
+                            <li class="list-group-item"><p class="card-text"><strong>Last Names:</strong> Dwayne</p></li>
+                            <li class="list-group-item"><p class="card-text"><strong>Date of Birth:</strong> 21/04/1990</p></li>
+                            <li class="list-group-item"><p class="card-text"><strong>City:</strong> Sydney</p></li>
+                            <li class="list-group-item"><p class="card-text"><strong>Surburb:</strong> Bondi</p></li>
+                            <li class="list-group-item"><p class="card-text"><strong>Phone Number:</strong> 0430 762 374</p></li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 2%;">
+            <div class="col-6 ml-auto mr-auto">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Next Events</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><p class="card-text"><strong>Location:</strong> From parramatta to Epping station</p></li>
+                            <li class="list-group-item">distance: 44Kms</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <span class="float-left">date: 04-20-2021 at 10:00am</span>
+                        <span class="float-right">Upcomming event</span>
 					</div>
-				</div>
-			</div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><p class="card-text"><strong>Location:</strong> From Liverpool to Revesby</p></li>
+                            <li class="list-group-item">distance: 11Kms</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <span class="float-left">date: 04-27-2021 at 10:00am</span>
+                        <span class="float-right">Upcomming event</span>
+					</div>					
+                </div>
+            </div>
+        </div>
 
-			<div class="row">
-				<div class="col-sm-4" style="border-style: groove;">
-					<a href="training.html"><b><h3></h3>Training</h3></b></a>
-					<table style="width:100%">
-						<tr>
-							<th>Training Name</th>
-							<th>Date</th>
-						</tr>
-						<tr>
-							<td>Changing Tires</td>
-							<td>15/05/2021</td>
-						</tr>
-						<tr>
-							<td>First aid training</td>
-							<td>22/04/2021</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
-		</div>
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12" style="border-style: groove;">
-					<h3><b>Announcements</b></h3>
-					<p> New event coming soon! Keep watch of what's in store! Happy riding.</p>
-				</div>
-			</div>
-		</div>
-	<script>
+        <div class="row" style="margin-top: 2%;">
+            <div class="col-6 ml-auto mr-auto">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Top Badges</h5>
+                    </div>
+					<div class="col-sm-4">
+						<button id="myBtn">Show Badges</button>
+
+						<div id="myModal" class="modal">
+
+							<div class="modal-content">
+								<span class="close">&times;</span>
+								<span class="w3-badge w3-xxxlarge w3-paddingw3-red">Rode 5km</span>
+								<span class="w3-badge w3-xxxlarge w3-padding w3-green">Fixed tyre</span>
+								<span class="w3-badge w3-xxxlarge w3-padding w3-blue">Ride leader</span>
+							</div>
+
+						</div>
+					</div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 2%;">
+            <div class="col-6 ml-auto mr-auto">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Training</h5>
+                    </div>
+                    <div class="card-body">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item"><p class="card-text"><strong>Changing Tyres</strong> Led by John Doe</p></li>
+						</ul>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <span class="float-left">date: 05-15-2021 at 10:00am</span>
+                        <span class="float-right">Upcoming Training</span>
+					</div>
+                    <div class="card-body">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item"><p class="card-text"><strong>First Aid Training</strong> Led by Jason Lawd</p></li>
+						</ul>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <span class="float-left">date: 04-22-2021 at 10:00am</span>
+                        <span class="float-right">Upcoming Training</span>
+					</div>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 2%; margin-bottom: 2%;">
+            <div class="col-6 ml-auto mr-auto">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h5 class="card-title">Announcements</h5>
+                    </div>
+                    <div class="card-body">
+						<p> New event coming soon! Keep watch of what's in store! Happy riding.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+ 	<script>
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
@@ -243,5 +210,5 @@ window.onclick = function(event) {
   }
 }
 	</script>
-	</body>
+  </body>
 </html>
