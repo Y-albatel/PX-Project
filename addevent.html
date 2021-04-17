@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Side Navigation Bar</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+  <div class="scrollmenu">
+    <a href="">Addventageous</a>
+    <a href="adminlogin.html"><button class="button button3">Logout</button></a>
+
+  </div>
+  
+  <div class="wrapper">
+    <div class="sidebar">
+        <ul>
+            
+          <li><a href="user.html"><i class="fas fa-user"></i>Users</a></li>
+          <li><a href="post.html"><i class="fas fa-address-card"></i>Posts</a></li>
+          <li><a href="adminevents.html"><i class="fas fa-project-diagram"></i>Events</a></li>
+          <li><a href="badges.html"><i class="fas fa-blog"></i>Badges</a></li>
+        </ul> 
+      
+    </div>
+
+      <div class="eventcontainer">
+        <div class="row">
+          <div class="col-25">
+            <label for="ename">Event Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="ename" name="eventname" placeholder="Enter Event..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="date">Date</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="date" name="date" placeholder="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Time</label>
+          </div>
+          <div class="col-75">
+             <input type="text" id="time" name="time" placeholder="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="rleader">Ride Leader</label>
+          </div>
+          <div class="col-75">
+            <textarea id="rleader" name="rleader" placeholder=""></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="location">Location </label>
+          </div>
+          <div class="col-75">
+            <textarea id="location" name="location" placeholder=""></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <a href="adminevents.html"><input type="post" value="Post"></a>
+        </div>
+        </form>
+      </div>
+      
+      </body>
+      </html>
